@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional statements</title>
+</head>
+<body>
+    <center>
+       <!--
+        <h1> if block </h1>
+        {% if a > b %}
+            <h1>a is {{b}}</h1>
+        {% endif %}
+       -->
+
+        <!-- <h1> if-else block </h1>
+        {% if a > b %}
+            <h2>a is high {{a}}</h2>
+        {% else %}
+            <h2>b is high {{b}}</h2>
+        {% endif %}
+        -->
+
+        <!-- <h1> if-elif-else block </h1>
+        {% if a > b and a > c %}
+            <h2>a is high {{a}}</h2>
+        {% elif b > c  %}
+            <h2>b is high {{b}}</h2>
+        {% else %}
+            <h2> else is {{c}}</h2>
+        {% endif %}
+        -->
+
+        <h1> nested-if block </h1>
+        {% if a > b %}
+            {% if a > c %}
+                <h2>a is high {{a}}</h2>
+            {% else %}
+                <h2>a is high {{c}}</h2>
+            {% endif %}
+        {% else %}
+            {% if b > c %}
+                <h2>b is high {{b}}</h2>
+            {% else %}
+                <h2>b is high {{c}}</h2>
+                {% endif %}
+        {% endif %}
+                
+    </center>
+</body>
+</html>
