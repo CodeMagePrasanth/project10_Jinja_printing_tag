@@ -9,6 +9,5 @@ def data_render(request):
 
 def conditional(request):
 
-    d={'a':1000,'b':233,'c':200}
-
+    d={'a':1000,'b':233,'c':200,'anime':['natruo','attack on titans']}
     return render(request,'conditional.html',context=d)

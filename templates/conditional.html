@@ -8,13 +8,13 @@
 <body>
     <center>
        <!--
-        <h1> if block </h1>
+        <h2> if block </h2>
         {% if a > b %}
-            <h1>a is {{b}}</h1>
+            <h2>a is {{b}}</h2>
         {% endif %}
        -->
 
-        <!-- <h1> if-else block </h1>
+        <!-- <h2> if-else block </h2>
         {% if a > b %}
             <h2>a is high {{a}}</h2>
         {% else %}
@@ -22,7 +22,7 @@
         {% endif %}
         -->
 
-        <!-- <h1> if-elif-else block </h1>
+        <!-- <h2> if-elif-else block </h2>
         {% if a > b and a > c %}
             <h2>a is high {{a}}</h2>
         {% elif b > c  %}
@@ -32,7 +32,7 @@
         {% endif %}
         -->
 
-        <h1> nested-if block </h1>
+        <!-- <h2> nested-if block </h2>
         {% if a > b %}
             {% if a > c %}
                 <h2>a is high {{a}}</h2>
@@ -46,7 +46,15 @@
                 <h2>b is high {{c}}</h2>
                 {% endif %}
         {% endif %}
-                
-    </center>
+        -->   
+
+{% for i in anime %}
+    <h2>I watched this best animes {{ i }}</h2>
+{% endfor %}
+
+<h2><a href="{% url 'data_render' %}">go to anime page</a></h2>
+
+
+</center>
 </body>
 </html>
